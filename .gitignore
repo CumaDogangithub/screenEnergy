@@ -1,1 +1,38 @@
+# --- Python Önbellek Dosyaları ---
+__pycache__/
+*.py[cod]
+*$py.class
 
+# --- Sanal Ortamlar (Virtual Environments) ---
+# En kritik kısım: Sanal ortam klasörünün GitHub'a gitmemesi gerekir
+venv/
+env/
+.env/
+.venv/
+env.bak/
+venv.bak/
+
+# --- Çevresel Değişkenler (Gizli Anahtarlar) ---
+.env
+
+# --- IDE ve Editör Dosyaları ---
+# VS Code ayarları
+.vscode/
+# PyCharm ayarları
+.idea/
+
+# --- İşletim Sistemi Kalıntıları ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS (olur da ileride Mac'te açarsan)
+.DS_Store
+
+# --- Projeye Özel Çıktılar (Gelecek İçin) ---
+# Eğer ileride kalibrasyon verilerini bir dosyaya kaydetmek istersen 
+# o dosyaların repoya gitmemesi için:
+*.log
+kalibrasyon.json
+kalibrasyon_verileri.dat
