@@ -1,0 +1,14 @@
+# Görüntü işleme ve Kamera Erişimi
+opencv-python
+
+# Yapay Zeka ve Göz Takibi (Stabil Sürüm)
+mediapipe==0.10.14
+
+# Matematiksel Hesaplamalar ve Matris İşlemleri
+numpy
+
+# Çoklu Monitör Bilgilerini Alma
+screeninfo
+
+# Windows API Erişimi (Pencere yönetimi ve karartma için)
+pywin32
