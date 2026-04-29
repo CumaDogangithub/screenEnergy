@@ -84,7 +84,7 @@ def bakilan_ekrani_bul(g_x, g_y):
 
 # --- YAPAY ZEKA VE KAMERA ---
 mp_face_mesh = mp.solutions.face_mesh
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
 prev_sx, prev_sy = 0, 0
 alpha = 0.08 
