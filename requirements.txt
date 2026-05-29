@@ -1,8 +1,8 @@
 # Görüntü işleme ve Kamera Erişimi
 opencv-python
 
-# Yapay Zeka ve Göz Takibi (Stabil Sürüm)
-mediapipe==0.10.14
+# Yüz Tespiti ve Göz Takibi (Tüm platformlarda çalışır)
+dlib
 
 # Matematiksel Hesaplamalar ve Matris İşlemleri
 numpy
@@ -10,5 +10,14 @@ numpy
 # Çoklu Monitör Bilgilerini Alma
 screeninfo
 
-# Windows API Erişimi (Pencere yönetimi ve karartma için)
-pywin32
+# Windows API Erişimi (Pencere yönetimi ve karartma için - sadece Windows)
+pywin32; sys_platform == "win32"
+
+# Linux Pencere Yönetimi (Pencere tespiti ve click-through için - sadece Linux)
+python-xlib; sys_platform == "linux"
+
+# --- NOT ---
+# Ayrıca 'shape_predictor_68_face_landmarks.dat' dosyasının proje klasöründe
+# bulunması gerekir. İndir:
+#   wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+#   bzip2 -d shape_predictor_68_face_landmarks.dat.bz2
